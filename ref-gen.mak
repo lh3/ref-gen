@@ -10,7 +10,7 @@ $(PREFIX).mkdir:
 		mkdir -p $(PREFIX) && touch $@
 
 $(PREFIX)/$(PREFIX).fa:$(PREFIX).mkdir
-		curl -L $(URL) | gzip -dc > $@ || echo done
+		curl -L $(URL) | gzip -dc | $(PATH_TOOLS)/seqtk seq -Ul80 > $@ || echo done
 
 $(PREFIX)/$(PREFIX).fa.fai:$(PREFIX)/$(PREFIX).fa
 		$(PATH_TOOLS)/samtools faidx $<
