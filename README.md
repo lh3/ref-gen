@@ -1,10 +1,16 @@
 ## Introduction
 
-This repo provides the URLs of several human reference genomes. These genomes
-were adapted from the original GenBank verions and work better for read
-alignment and variant calling. All of them include [unlocalized][GRC-def] and
-unplaced contigs, use [rCRS][rCRS] for mitochondrion and have pseudoautosomal
-regions (PARs) on Y chromosome hard masked.
+There are multiple versions of human reference genomes. The most widely used so
+far is GRCh38 or hg38 according to UCSC. NCBI, [GRC][GRC], UCSC and Ensembl all
+provide their versions of GRCh38, which are all [subtly different][blog] from
+each other and are often suboptimal. It is surprisingly nontrivial to choose
+the right reference genome in your analysis.
+
+This repo provides the URLs of several human reference genomes I recommend.
+These genomes were adapted from the original GenBank verions and work better
+for read alignment and variant calling. All of them include
+[unlocalized][GRC-def] and unplaced contigs, use [rCRS][rCRS] for mitochondrion
+and have pseudoautosomal regions (PARs) on Y chromosome hard masked.
 
 To download these genomes, see links in [URL.txt](URL.txt). The genomes are
 also "permanently" avaialble at doi:[10.5281/zenodo.8045373][zenodo] along with
