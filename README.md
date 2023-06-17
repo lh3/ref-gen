@@ -13,7 +13,7 @@ for read alignment and variant calling. All of them include
 and have pseudoautosomal regions (PARs) on Y chromosome hard masked.
 
 To download these genomes, see links in [URL.txt](URL.txt). The genomes are
-also "permanently" avaialble at doi:[10.5281/zenodo.8045373][zenodo] along with
+also "permanently" available at doi:[10.5281/zenodo.8045373][zenodo] along with
 their BWA and Bowtie2 indices. Command lines for generating secondary files can
 be found in [ref-gen.mak](ref-gen.mak). Note that downloading from Zenodo can
 be slow. I will look for a faster host in future.
@@ -48,8 +48,9 @@ In more detail:
   sequences and HLA alleles. As GRCh38 is more complete than GRCh37, GRCh38
   decoy sequences are not as important as GRCh37 decoy. Furthermore, most tools
   would not work well with this version as they are not ALT-aware. Improper
-  use of this genome would greatly hurt variant sensitivity. Not recommended
-  unless you know what you are doing.
+  use of this genome would hurt variant sensitivity. Not recommended unless you
+  know what you are doing. **hs38DH** has been used to create high-coverage
+  1000G CRAM files. You may need this verion to decode these CRAM files.
 
 I was involved in discussions on generating **hs37** and **hs38**. I created
 the final FASTA files of **hs37d5**, **hs38DH** and **chm13v2**. Of course,
