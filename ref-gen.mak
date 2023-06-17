@@ -19,7 +19,7 @@ $(PREFIX).mkdir:
 		mkdir -p $(PREFIX) && touch $@
 
 $(PREFIX)/$(PREFIX).fa:$(PREFIX).mkdir
-		curl -L $(URL) | gzip -dc | $(PATH_TOOLS)/seqtk seq -Ul80 > $@ || echo done
+		curl -L --retry 10 $(URL) | $(PATH_TOOLS)/seqtk seq -Ul80 > $@
 
 $(PREFIX)/$(PREFIX).fa.fai:$(PREFIX)/$(PREFIX).fa
 		$(PATH_TOOLS)/samtools faidx $<
