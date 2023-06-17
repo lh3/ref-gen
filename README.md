@@ -16,7 +16,7 @@ be slow. I will look for a faster host in future.
 
 The following table gives a brief description of these genomes:
 
-|Name   |Source |Brief description|
+|Name   |Coordinate |Brief description|
 |:------|:------|:----------|
 |hs37   |GRCh37 |1000 Genomes Project (1000G) reference in 2010|
 |hs37d5 |GRCh37 |hs37 with decoy (recommended GRCh37)|
